@@ -17,5 +17,7 @@ send_github:
       fi
     - git branch --show-current
     - git checkout main
+    - git config --global user.email "$USER_EMAIL"
+    - git config --global user.name "$USER_NAME"
     - git pull --rebase github main
     - git push github main
