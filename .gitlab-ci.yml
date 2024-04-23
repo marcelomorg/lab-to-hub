@@ -17,4 +17,5 @@ send_github:
       fi
     - git branch --show-current
     - git checkout main
+    - git pull github main
     - git push github main
