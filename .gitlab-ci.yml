@@ -16,4 +16,6 @@ send_github:
     - if ! git remote -v | grep -q "github.*$TOKEN_GITHUB"; then
         git remote set-url github https://$USER_GITHUB:$TOKEN_GITHUB@github.com/$USER_GITHUB/lab-to-hub.git ;
       fi
+    - git branch --show-current
+    - git checkout main
     - git push github main
