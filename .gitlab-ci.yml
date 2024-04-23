@@ -9,7 +9,6 @@ send_github:
     # Send only last commit to github. Need is configured user and token.
     # - PUSH_SHA_GH=$(git rev-parse HEAD)
     # - git push github $PUSH_SHA_GH:main
-    - git branch -m main
     - if ! git remote -v | grep -q "github"; then
         git remote add github https://github.com/$USER_GITHUB/lab-to-hub.git ;
       fi
