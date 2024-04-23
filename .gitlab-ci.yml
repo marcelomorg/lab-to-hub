@@ -17,5 +17,5 @@ send_github:
       fi
     - git branch --show-current
     - git checkout main
-    - git pull --merge github main
+    - git pull --rebase github main
     - git push github main
