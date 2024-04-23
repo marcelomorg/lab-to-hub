@@ -21,3 +21,4 @@ send_github:
     - git config --global user.name "$USER_NAME"
     - git pull --rebase github main
     - git push github main
+    
