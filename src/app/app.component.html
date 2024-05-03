@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agendamento Test</title>
+<title>Agendamento de Horários</title>
+<link rel="stylesheet" href="app.component.css">
 </head>
 <body>
 
@@ -22,11 +23,15 @@
         </tr>
     </thead>
     <tbody>
-        <!-- Os dias serão preenchidos dinamicamente com JavaScript -->
+        <!-- Os dias serão preenchidos dinamicamente com Angular -->
+        <tr *ngFor="let week of weeks">
+            <ng-container *ngFor="let day of week">
+                <td *ngIf="day > 0 && day <= daysInMonth" (click)="selectDate(day)">{{ day }}</td>
+                <td *ngIf="day <= 0 || day > daysInMonth"></td>
+            </ng-container>
+        </tr>
     </tbody>
 </table>
-
-<script src="script.js"></script>
 
 </body>
 </html>
