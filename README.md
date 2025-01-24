@@ -69,7 +69,7 @@ Add the following secret to your GitHub repository:
 
 ## Live Demo
 
-Access the deployed application here: [Lab-to-Hub on GitHub Pages](https://<your-username>.github.io/lab-to-hub/)
+Access the deployed application here: [Lab-to-Hub on GitHub Pages](https://marcelomorg.github.io/lab-to-hub/)
 
 Replace `<your-username>` with your GitHub username.
 
